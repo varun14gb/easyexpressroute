@@ -14,5 +14,9 @@
     "name": "Varun Singh",
     "email": "varun14gb@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/varun14gb/easyexpressroute.git"
+  }
 }
