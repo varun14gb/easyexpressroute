@@ -1,0 +1,18 @@
+{
+  "name": "easyexpressroute",
+  "version": "1.0.0",
+  "description": "This makes express routing easier.",
+  "main": "index.js",
+  "keywords": [
+    "express",
+    "routes"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Varun Singh",
+    "email": "varun14gb@gmail.com"
+  },
+  "license": "MIT"
+}
