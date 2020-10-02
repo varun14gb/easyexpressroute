@@ -30,7 +30,6 @@ exports = module.exports = (fn) => {
           flag = 0;
         } else {
           let val = req.slice(current);
-          console.log(val + file.slice(0, file.length - 3));
           fn.use(
             val + file.slice(0, file.length - 3),
             require(req + file.slice(0, file.length - 3))
