@@ -20,15 +20,19 @@ exports = module.exports = (fn) => {
   try {
     //reading files from ./routes directory
     files = getAllFilesInDir(process.cwd() + "/routes");
-
+    let current = process.cwd().length + 7;
+    let flag = 1;
     files.forEach((fileObj) => {
       let { req, file } = fileObj;
       if (file.endsWith(".js")) {
-        if (file.slice(0, file.length - 3) === "index") {
+        if (file.slice(0, file.length - 3) === "index" && flag == 1) {
           fn.use("/", require(req + file.slice(0, file.length - 3)));
+          flag = 0;
         } else {
+          let val = req.slice(current);
+          console.log(val + file.slice(0, file.length - 3));
           fn.use(
-            "/" + file.slice(0, file.length - 3),
+            val + file.slice(0, file.length - 3),
             require(req + file.slice(0, file.length - 3))
           );
         }
