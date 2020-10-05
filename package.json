@@ -1,5 +1,5 @@
 {
-  "name": "easyexpressroute",
+  "name": "@varun14gb/easyexpressroute",
   "version": "1.0.2",
   "description": "This makes express routing easier.",
   "main": "index.js",
